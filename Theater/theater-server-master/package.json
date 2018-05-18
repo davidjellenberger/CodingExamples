@@ -1,0 +1,56 @@
+{
+  "name": "cs-capstone",
+  "version": "0.0.1",
+  "description": "Elijah, David & Deandre's Senior Capstone in Computer Science Project. Fall 2017.",
+  "repository": "https://stogit.cs.stolaf.edu/cap-f17/theater",
+  "main": "server.js",
+  "scripts": {
+    "test": "set NODE_ENV=test && set CI=FALSE && jest --runInBand",
+    "ci": "set NODE_ENV=test && set CI=TRUE && jest --runInBand --ci --forceExit",
+    "start": "set NODE_ENV=development && set CI=FALSE && babel-node server.js",
+    "db:migrate:up": "set NODE_ENV=development && sequelize db:migrate",
+    "db:migrate:up:test": "sequelize db:migrate --env test",
+    "db:migrate:up:ci": "sequelize db:migrate --env test --config config/config.ci.json",
+    "db:migrate:up:prod": "set NODE_ENV=production && sequelize db:migrate",
+    "db:migrate:down": "set NODE_ENV=development && sequelize db:migrate:undo:all",
+    "db:migrate:down:test": "set NODE_ENV=test && sequelize db:migrate:undo:all",
+    "db:migrate:down:prod": "set NODE_ENV=production && sequelize db:migrate:undo:all",
+		"db:seed:up": "sequelize db:seed:all",
+		"db:seed:up:test": "sequelize db:seed:all --env test",
+		"db:seed:up:ci": "set CI=TRUE && sequelize db:seed:all --env test --config config/config.ci.json",
+		"db:seed:down:test": "sequelize db:undo:all --env test",
+		"db:seed:down": "sequelize db:seed:undo:all",
+    "document": "apidoc -e ./node_modules/ -o doc"
+  },
+  "apidoc": {
+    "name": "Theater API",
+    "version": "0.0.1",
+    "description": "Elijah, David & Deandre's Senior Capstone in Computer Science Project. Fall 2017.",
+    "title": "Theater API"
+  },
+  "author": "Elijah Verdoorn",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "express-fileupload": "^0.2.0",
+    "fs": "0.0.1-security",
+    "image-size": "^0.6.1",
+    "moment": "^2.18.1",
+    "mysql2": "^1.4.2",
+    "node-fetch": "^1.7.3",
+    "sequelize": "^4.8.3",
+    "sequelize-cli": "^3.0.0-2",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "jest": "^21.2.1",
+    "superagent": "^3.6.0",
+    "supertest": "^3.0.0"
+  }
+}

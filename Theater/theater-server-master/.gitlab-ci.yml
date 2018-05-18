@@ -1,0 +1,34 @@
+image: node:6
+
+services:
+        - mysql:latest
+
+before_script:
+        - npm install
+
+variables:
+        MYSQL_DATABASE: theater_control_ci_database
+        MYSQL_ROOT_PASSWORD: ci_database
+
+cache:
+        paths:
+                - node_modules/
+
+stages:
+        - test
+
+test:node:6:
+        image: node:6
+        stage: test
+        script:
+                - npm run db:migrate:up:ci
+                - npm run db:seed:up:ci
+                - npm run ci
+
+test:node:7:
+        image: node:7
+        stage: test
+        script:
+                - npm run db:migrate:up:ci
+                - npm run db:seed:up:ci
+                - npm run ci

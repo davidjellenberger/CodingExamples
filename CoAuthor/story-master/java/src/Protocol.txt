@@ -1,0 +1,77 @@
+Completely ad-hoc protocol as it currently stands:
+
+Client sends message to Backend consisting of type and content
+Currently meaningful message types:
+  SQL
+    content is a SQL command, which the Backend will execute
+    response is a json representation of the ResultSet produced from a query
+    (currently no attempt to handle output from non-query commands)
+  JSON/SQL
+    content is a JSON object with fields defined so that the Worker can build
+     a SQL command from it.
+    currently supports the following commands (arguments in [] are optional):
+      CreateUser:
+        name - String
+        imageData - String (probably converted from byte[])
+        bio - String
+      CreateStory:
+        creator - int
+        title - String
+        maxLength - int
+        genre - String
+        [imageBytes] - String
+        [description] - String
+        [content] - String
+      CreateChapter:
+        story - int
+        author - int
+        [parent] - int (if not specified, previous chapter assumed, or NULL if no previous chapter)
+        content - String
+      UpdateUser:
+        id - int
+        [imageData] - String (probably converted from byte[])
+        [bio] - String
+      QueryUsers:
+        [id] - int
+        [name] - String
+        [nameExact] - boolean (determines whether % will be pre-/appended to name)
+        [joinedBefore] - String (yyyy-MM-DD HH:mm:ss format)
+        [joinedAfter] - String (yyyy-MM-DD HH:mm:ss format)
+      QueryStories:
+        [id] - int
+        [creator] - int
+        [title] - String
+        [titleExact] - boolean (determines whether % will be pre-/appended to title) 
+        [maxLength] - int
+        [maxLengthAtLeast] - int
+        [maxLengthAtMost] - int
+        [genre] - String
+        [genreExact] - boolean (determines whether % will be pre-/appended to genre) 
+        [newerThan] - String (yyyy-MM-DD HH:mm:ss format)
+        [olderThan] - String (yyyy-MM-DD HH:mm:ss format)
+        [bio] - String
+      QueryChapters:
+        [id] - int
+        [before] - int
+        [after] - int
+        [author] - int
+        [story] - int 
+        [newerThan] - String (yyyy-MM-DD HH:mm:ss format)
+        [olderThan] - String (yyyy-MM-DD HH:mm:ss format)
+        [content] - String
+      CreateLock:
+        user - int
+        story - int
+      ReleaseLock: eventually, this should probably automatically be called after
+       creating a new chapter, but for now it must be called manually
+        user - int
+        story - int
+    response either a json representation of the ResultSet (if command was a query)
+     or an integer (if command was an insert)
+  EOT
+    signals end of communication
+    response should be anything (i.e., Client waits for somesort of response before
+     actually terminating)
+Any other message type does nothing, though the Client will wait for a response.
+All of the Backend responses currently have type ACK or NACK, depending on whether
+ or not the communication/request succeeded, but this isn't actually checked.

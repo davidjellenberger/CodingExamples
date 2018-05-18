@@ -1,0 +1,12 @@
+# Temp files
+*.swp*
+
+# Node files
+node_modules
+
+# Documentation
+doc
+*.pdf
+
+# Default user files directory
+userFiles

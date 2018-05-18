@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Storytelling</string>
+    <string name="genre">Genre</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="appTitle">CoAuthor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie, velit posuere gravida volutpat, purus mauris dignissim diam, eu accumsan arcu justo non metus. Praesent vitae commodo odio. Aenean at efficitur sapien. Pellentesque volutpat libero a lectus luctus, vitae fringilla orci imperdiet. Vivamus sagittis justo sed ante tincidunt tincidunt. Nunc nec volutpat nulla. Aliquam convallis mollis pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eget eros a tortor elementum rhoncus. Phasellus ut maximus lorem. Nunc nulla leo, commodo at lacinia nec, viverra quis metus. Proin eu elementum ante. Vivamus in aliquet nisl. Ut fringilla auctor ornare. Quisque varius, metus quis dapibus placerat, purus tellus ornare nibh, eu pellentesque nunc enim eget nulla. Phasellus congue lacus nibh, non dapibus ligula viverra quis. Pellentesque interdum, urna non ornare interdum, magna odio mattis mauris, eu vulputate felis urna vitae diam. Morbi a feugiat leo. In vehicula congue odio vel maximus. Phasellus ligula massa, luctus eu neque at, maximus suscipit magna. Curabitur id convallis sem. Aliquam id malesuada nibh. Quisque quis dignissim risus. Mauris vestibulum volutpat metus, in congue nisl tristique ac. Quisque egestas eu erat at fringilla. Aliquam augue lectus, cursus ut sodales non, rutrum vitae neque. Nam eu quam sagittis, elementum nisi id, feugiat risus. Nulla feugiat eros nibh, ullamcorper suscipit ligula tristique ac. Ut mollis augue neque, volutpat fringilla arcu pulvinar eget. Duis pharetra augue sit amet risus vestibulum, id dapibus elit lacinia. Praesent iaculis nibh ut orci semper sodales. Duis orci leo, tempus sit amet nulla sit amet, suscipit posuere felis. Donec mattis placerat arcu, sagittis pretium lorem auctor at. Proin molestie quam vitae eros pellentesque tincidunt. Vivamus semper pretium tempor. Aenean euismod porta lacus, nec lobortis mi. Donec ac enim nec quam tincidunt mattis pulvinar vitae augue. Cras elementum euismod felis. Morbi feugiat massa magna, vel convallis lorem sodales et. Proin vehicula vitae metus ac luctus. Integer imperdiet vel libero in semper. Sed id nulla dapibus, scelerisque mi vitae, aliquet felis. In ac diam mollis, varius dolor et, maximus purus. Maecenas maximus placerat turpis nec consequat. Duis ac ex mauris. Sed lacinia cursus felis, et maximus massa aliquam ut. In hac habitasse platea dictumst. Cras lobortis diam tristique sapien eleifend congue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur dapibus ultricies diam ac pretium. Nulla nec nibh ut neque sollicitudin semper in semper neque. Nulla eros ipsum, molestie sed malesuada non, facilisis tristique mi. Donec posuere quam elit, sed ornare nisi lobortis sed. Donec ut massa est. Nunc rhoncus elit in augue gravida, quis venenatis mi sagittis. Duis at volutpat tortor. Ut interdum, orci sit amet vehicula aliquam, nisl eros varius mauris, quis mollis ligula turpis at leo. Etiam ut mauris eget felis semper blandit in eleifend erat. Vivamus justo nulla, imperdiet ut mollis sit amet, bibendum vitae ligula. Nulla id commodo leo. Donec luctus dolor ante, faucibus pharetra ipsum finibus at. Integer id cursus turpis. Aliquam porta est vitae tortor maximus, id ornare orci gravida. Phasellus sagittis ultricies feugiat. Integer id ante sagittis odio gravida pellentesque. Ut elementum, mi a convallis imperdiet, tellus nisl porta nibh, pulvinar aliquet est odio id neque. Vestibulum convallis bibendum eros, eu egestas sem euismod sit amet. Cras suscipit sollicitudin sem sagittis auctor. Nullam mollis enim ac mi sagittis ultricies. Vivamus eu consequat diam, eu ornare mauris. Phasellus vestibulum sollicitudin ipsum ac gravida. Duis et dictum metus. Maecenas bibendum auctor maximus. Donec euismod felis vitae feugiat aliquet. Suspendisse eu purus tempor lacus sollicitudin bibendum. Sed sed ipsum cursus, vestibulum erat ac, feugiat nisi. Quisque iaculis arcu nisi, at bibendum purus bibendum molestie. Aenean est risus, vehicula posuere venenatis in, condimentum et eros. Sed id molestie neque. Curabitur quis maximus diam. Aliquam tincidunt porta enim, quis iaculis ligula sagittis id. Donec nec lobortis ex, at consectetur ipsum. Curabitur eu orci mauris. Sed dictum turpis quis sapien varius feugiat. Morbi ultrices neque nisl, sit amet facilisis arcu bibendum quis. Nunc sed ipsum ullamcorper, eleifend erat ac, egestas urna. Praesent finibus quam a tortor consequat, id vestibulum ipsum tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elementum, diam ac aliquam blandit, sem nulla dignissim felis, vitae dictum felis enim a nulla.</string>
+    <string name="addition">Compose your addition to the story here...</string>
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="search_hint">Enter Search Query</string>
+    <string name="title_activity_search">Search Stories</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_new_story">Create New Story</string>
+    <string name="username">Username</string>
+    <string name="email">Email Address</string>
+    <string name="picture">Change Profile Picture</string>
+    <string name="story_title">Story Title</string>
+    <string name="description">Story Description</string>
+    <string name="story_picture">Story Picture</string>
+    <string name="num_words">Number of words per entry:</string>
+    <string name="create_story">Create Story!</string>
+    <string name="story_genre">Story Genre</string>
+    <string name="nameDisplay">David Ellenberger</string>
+    <string name="bioContentlol">Hi! My name is David Ellenberger, a sophomore Computer Science and Mathematics major. I enjoy running, coding, fixing null pointer exceptions, and writing when I have time! Null pointers are the best, theyre so so so much fun.</string>
+    <string name="edit_bio_label">Edit Bio</string>
+    <string name="edit_pic_label">Edit Pic</string>
+
+    <string-array name="genres_array">
+        <item>Drama</item>
+        <item>Mystery</item>
+        <item>Fairy Tale</item>
+        <item>Fantasy</item>
+        <item>Historical Fiction</item>
+        <item>Horror</item>
+        <item>Mythology</item>
+        <item>Science Fiction</item>
+        <item>Thriller</item>
+        <item>Western</item>
+        <item>Romance</item>
+        <item>Non-Fiction</item>
+    </string-array>
+</resources>
